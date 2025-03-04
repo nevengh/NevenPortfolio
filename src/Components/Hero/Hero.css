@@ -1,0 +1,103 @@
+/* تنسيقات Hero الحالية */
+.Hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border: 0.5px solid var(--container-color);
+}
+
+.Hero .overlay {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: var(--primary-color);
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: skew(-10deg);
+    border-bottom-right-radius: 20px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    max-width: 1240px;
+    height: 100%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    width: 30%;
+    height: 540px;
+    border-radius: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero-title {
+    position: relative;
+    width: 55%;
+}
+
+.hero-title h1 {
+    font-size: 50px;
+    color: var(--primary-color);
+}
+
+.hero-title span {
+    font-size: 38px;
+    color: var(--title-color);
+}
+
+/* تنسيقات About Me الجديدة */
+.about-me {
+    margin-top: 20px; /* مسافة من العنوان */
+    text-align: left; /* محاذاة النص إلى اليسار */
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    color: var(--text-color); /* لون النص */
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-me strong {
+    color: var(--primary-color); /* لون مميز للكلمات المهمة */
+}
+
+@media (max-width: 767px) {
+    .Hero .overlay {
+        height: 78.6%;
+        width: 80%;
+    }
+
+    .hero-title {
+        width: 100%;
+    }
+
+    .hero-title h1 {
+        font-size: 34.6px;
+        text-align: center;
+    }
+.hero-title h1 span{
+    font-size: 25px;
+}
+    .hero-image {
+        width: 380px;
+        height: 400px;
+        border-radius: 20px;
+    }
+
+    .about-me {
+        text-align: center; /* توسيط النص في الأجهزة المحمولة */
+    }
+}

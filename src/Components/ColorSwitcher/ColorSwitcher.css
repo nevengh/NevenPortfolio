@@ -1,0 +1,88 @@
+.ColorSwitcher {
+  position: fixed;
+  right: 0;
+  top: 10%;
+}
+.sitting {
+  background-color: var(--title-color);
+  box-shadow: 0 0 2px #ccc;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  width: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.sitting svg{
+    font-size: 25px;
+    transition: fill .4s ease-in-out;
+}
+.sitting svg:hover{
+    fill: var(--container-color);
+}
+.colors-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.sitting-open{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    z-index: 9999;
+    background-color: var(--title-color);
+    box-shadow: 0 0 4px #ccc;
+    padding: 15px;
+    width: 220px;
+}
+.close{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid var(--container-color);
+    margin-bottom:20px ;
+}
+.close p{
+    color: var(--bg-color);
+}
+.close svg{
+    cursor: pointer;
+    background-color: none;
+}
+.green-color svg {
+    fill: var(--primary-color);
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+}
+.blue-color svg{
+    fill: #00dcff;
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+}
+.orange-color svg{
+    fill: #ff6b00;
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+}
+.red-color svg{
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+    fill: #ff0000;
+}
+.cymac-color svg{
+    font-weight: 400;
+    font-size: 25px;
+    cursor: pointer;
+    fill: #ff00e2;
+}

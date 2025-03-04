@@ -1,0 +1,70 @@
+.AboutMe{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.AboutMe-title{
+    font-size: 48px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--title-color);
+}
+.AboutMe-title span{
+    color: var(--primary-color);
+}
+.info h3{
+    font-size: 30px;
+    color: var(--title-color);
+}
+.AboutMe-container{
+    max-width: 1240px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 20px 25px;
+}
+.details-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-details{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    margin-top: 10px;
+}
+.info-details p span ,.info-details p span a{
+    color: var(--title-color);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    transition: color  text-shadow .4s ease-in-out;
+}
+.info-details p span a:hover{
+    color: #ccc;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.StateBox-Container{
+    flex-wrap: wrap;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+hr{
+    width: 30%;
+    height: 0.5px;
+    background-color: var(--border-color);
+    margin: 50px auto;
+}

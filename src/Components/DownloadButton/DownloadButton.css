@@ -1,0 +1,31 @@
+.button {
+  margin-top: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 35px;
+  color: var(--title-color);
+  display: inline-block;
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  overflow: hidden;
+  padding: 15px 70px 15px 35px;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+}
+.button:hover{
+    background:var(--primary-color) ;
+}
+.button:hover  .button_icon{
+    border-left: 3px solid white;
+    
+}
+.button_icon {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  inset-block: -1px;
+  line-height: 65px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  width: 55px;
+}
+

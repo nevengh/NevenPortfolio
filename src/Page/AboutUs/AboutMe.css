@@ -1,70 +1,132 @@
-.AboutMe{
+.AboutMe {
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 20px; /* حتى لا تلتصق العناصر بجوانب الشاشة */
+    box-sizing: border-box;
 }
-.AboutMe-title{
+
+.AboutMe-title {
     font-size: 48px;
     letter-spacing: 2px;
     text-align: center;
     color: var(--title-color);
+    margin-bottom: 20px;
 }
-.AboutMe-title span{
+
+.AboutMe-title span {
     color: var(--primary-color);
 }
-.info h3{
+
+.info h3 {
     font-size: 30px;
     color: var(--title-color);
+    text-align: center;
 }
-.AboutMe-container{
+
+/* الحاوية الرئيسية */
+.AboutMe-container {
     max-width: 1240px;
+    width: 100%;
     margin: 40px auto;
     display: flex;
+    flex-wrap: wrap; /* حتى ينزلوا تحت بعض لو الشاشة ضيقة */
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-
+    align-items: flex-start; /* مهم حتى يبدأوا من الأعلى */
+    gap: 20px; /* حتى يكون بينهم فراغ بسيط */
     padding: 20px 25px;
+    box-sizing: border-box;
 }
-.details-group{
+
+/* المجموعة الكاملة للتفاصيل */
+.details-group {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    gap: 20px;
 }
-.info-details{
-    width: 550px;
+
+/* تفاصيل النصوص */
+.info-details {
+    flex: 1;
+    min-width: 300px; /* حتى لا يصبح ضيق جدًا في الشاشات الصغيرة */
+    max-width: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: start;
-
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-top: 10px;
+    box-sizing: border-box;
 }
-.info-details p span ,.info-details p span a{
+
+/* الروابط داخل التفاصيل */
+.info-details p span, 
+.info-details p span a {
     color: var(--title-color);
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    transition: color  text-shadow .4s ease-in-out;
+    transition: color text-shadow 0.4s ease-in-out;
 }
-.info-details p span a:hover{
+
+.info-details p span a:hover {
     color: #ccc;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
-.StateBox-Container{
-    flex-wrap: wrap;
-    width: 50%;
+/* حالة البوكس */
+.StateBox-Container {
+    flex: 1;
+    min-width: 300px; /* حتى يكون مناسب للشاشات الصغيرة */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
+    box-sizing: border-box;
 }
 
-hr{
+/* الخط الفاصل */
+hr {
     width: 30%;
     height: 0.5px;
     background-color: var(--border-color);
     margin: 50px auto;
+}
+
+/* ميديا كويري لضبط التنسيق في الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .AboutMe {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .AboutMe-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .details-group {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-details, 
+    .StateBox-Container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-details {
+        align-items: center;
+    }
+
+    .info h3 {
+        font-size: 24px;
+    }
 }

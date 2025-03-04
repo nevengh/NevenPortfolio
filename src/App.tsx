@@ -10,7 +10,7 @@ import Portfolio from './Page/Portfolio/Portfolio'
 
 const App = () => {
   return (
-    <div>
+    <div className='AppContainer'>
       <Hero/>
       <ColorSwitcher/>
       <AboutMe/>

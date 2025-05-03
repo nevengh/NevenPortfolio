@@ -33,10 +33,8 @@ const MySkills = () => {
             <div
               className="circular-progress"
               style={{
-                background: `conic-gradient(#00ff99 ${
-                  skill.percentage * 3.6
-                }deg, #222 ${skill.percentage * 3.6}deg)`,
-              }}
+                "--percentage": skill.percentage,
+              } as React.CSSProperties}
             >
               <span className="progress-text">{skill.percentage}%</span>
             </div>

@@ -37,7 +37,6 @@
       var(--primary-color) calc(var(--percentage) * 3.6deg),
       #222 calc(var(--percentage) * 3.6deg)
     );
-    
     border-radius: 50%;
     display: flex;
     align-items: center;

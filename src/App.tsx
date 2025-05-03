@@ -1,6 +1,7 @@
 import './App.css'
 import ColorSwitcher from './Components/ColorSwitcher/ColorSwitcher'
 import Hero from './Components/Hero/Hero'
+import WhatsApp from './Components/WhatsApp/WhatsApp'
 import AboutMe from './Page/AboutUs/AboutMe'
 import Contact from './Page/Contact/Contact'
 import ExperienceEducation from './Page/ExperienceEducation/ExperienceEducation'
@@ -18,6 +19,7 @@ const App = () => {
       <ExperienceEducation/>
       <Portfolio/>
       <Contact/>
+      <WhatsApp/>
     </div>
   )
 }

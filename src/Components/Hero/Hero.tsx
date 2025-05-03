@@ -1,5 +1,5 @@
 import './Hero.css';
-import neven from '../../assets/1721650340124.jpg';
+import neven from '../../assets/IMG_9068_11zon.webp';
 
 const Hero = () => {
   return (

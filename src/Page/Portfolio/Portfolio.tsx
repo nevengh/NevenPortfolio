@@ -10,6 +10,7 @@ import Lobo2 from '../../assets/lobo22.png';
 import gentle from '../../assets/gentle.png';
 import golden from '../../assets/Golden.png';
 import British from '../../assets/british.png';
+import TheSClinic from '../../assets/the s clinic.png'
 
 // بيانات المشاريع (أسهل للصيانة والإضافة مستقبلاً)
 const projects = [
@@ -21,6 +22,7 @@ const projects = [
   { img: British, link: 'https://harmonious-fudge-6a9a61.netlify.app/' },
   { img: gentle, link: 'https://gentlecaremedicalcenter.com/' },
   { img: golden, link: 'https://goldenclick.ae/landingpage/' },
+  { img: TheSClinic, link: 'https://thesclinic.ae/' },
 ];
 
 const Portfolio = () => {

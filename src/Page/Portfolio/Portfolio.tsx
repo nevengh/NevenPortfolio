@@ -8,7 +8,7 @@ import UniqueSmile from '../../assets/uniqueSmile (2).png';
 import Lobo from '../../assets/Lobo.png';
 import Lobo2 from '../../assets/lobo22.png';
 import gentle from '../../assets/gentle.png';
-import golden from '../../assets/Golden.png';
+import tcpi from '../../assets/tcpi.png';
 import British from '../../assets/british.png';
 import TheSClinic from '../../assets/the s clinic.png'
 
@@ -21,7 +21,7 @@ const projects = [
   { img: Lobo2, link: 'https://harmonious-fudge-6a9a61.netlify.app/' },
   { img: British, link: 'https://harmonious-fudge-6a9a61.netlify.app/' },
   { img: gentle, link: 'https://gentlecaremedicalcenter.com/' },
-  { img: golden, link: 'https://goldenclick.ae/landingpage/' },
+  { img: tcpi, link: 'https://tcpi-uae.com/' },
   { img: TheSClinic, link: 'https://thesclinic.ae/' },
 ];
 
